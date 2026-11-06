@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>言語を追加する</title>
+</head>
+<body>
+    <h2>プログラミング言語を追加する</h2>
+    <form action="/lang_add">
+        <label for="name">言語名</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="year">登場年</label>
+        <input type="number" name="year" id="year" min="1940" max="2100" required>
+
+        <label for="creator">設計者</label>
+        <input type="text" name="creator" id="creator" required>
+
+        <input type="submit" value="登録">
+    </form>
+    <p><a href="/lang">一覧を見る</a></p>
+</body>
+</html>

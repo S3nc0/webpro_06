@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>プログラミング言語</title>
+</head>
+<body>
+  <h2>プログラミング言語の一覧</h2>
+  <table border="1">
+    <thead>
+      <tr><th>ID</th><th>言語名</th><th>登場年</th><th>設計者</th></tr>
+    </thead>
+    <tbody>
+      <% for( let row of data ) { %>
+        <tr>
+          <td><%= row.id %></td>
+          <td><%= row.name %></td>
+          <td><%= row.year %></td>
+          <td><%= row.creator %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <p><a href="/public/lang_add.html">言語を追加する</a></p>
+</body>
+</html>
